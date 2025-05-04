@@ -35,4 +35,13 @@ const gallery = {
   'The Scream': 'Edvard Munch',
 }
 
-function updateGallery() {}
+function updateGallery(gallery, key, newValue) {
+   gallery[key] = newValue   //Если в gallery уже есть ключ key, то его значение обновляется.
+
+  // Если ключа нет, он создаётся, и в gallery появляется новая пара ключ: значение.
+}
+
+updateGallery(gallery, 'Mona Lisa', 'Leonardo da Vinci, 1503-1506')
+updateGallery(gallery, 'The Persistence of Memory', 'Salvador Dali')
+
+console.log(gallery)

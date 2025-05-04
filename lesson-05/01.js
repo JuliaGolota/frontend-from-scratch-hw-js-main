@@ -23,6 +23,12 @@ const game = {
     }
   }
 }
+// 2 variant
+// if (game.resources.hasOwnProperty(resource)) {
+//   game.resources[resource] += amount;
+// } else {
+//   console.log("Invalid resource");
+// }
 
 game.addResource("gold", 50);      
 console.log(game.resources.gold); 
