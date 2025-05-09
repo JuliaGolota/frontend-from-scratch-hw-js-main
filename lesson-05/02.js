@@ -45,3 +45,35 @@ updateGallery(gallery, 'Mona Lisa', 'Leonardo da Vinci, 1503-1506')
 updateGallery(gallery, 'The Persistence of Memory', 'Salvador Dali')
 
 console.log(gallery)
+
+
+// Вариант 1: с hasOwnProperty
+
+// function updateGallery(gallery, key, newValue) {
+//   if (gallery.hasOwnProperty(key)) {
+//     // ключ уже есть — обновляем
+//     gallery[key] = newValue;
+//   } else {
+//     // ключа нет — добавляем
+//     gallery[key] = newValue;
+//   }
+// }
+
+// Вариант 2: с in
+
+// function updateGallery(gallery, key, newValue) {
+//   if (key in gallery) {
+//     // ключ уже есть
+//     gallery[key] = newValue;
+//   } else {
+//     // ключа нет
+//     gallery[key] = newValue;
+//   }
+// }
+
+// key in gallery проверяет, есть ли такой ключ включая унаследованные свойства, а hasOwnProperty — только в самом объекте.
+
+// Вариант 3: с for...in
+
+
+
