@@ -29,7 +29,8 @@ prevBtn.addEventListener("click", function(){
   if(index < 0){
     index = WEB_TECH_IMAGES.length - 1; // переходим к последней
   }
-  img.src = WEB_TECH_IMAGES[index];
+  // меняем картинку на нужную в зависимости от текущего значения index
+  img.src = WEB_TECH_IMAGES[index];   
 })
 
 nextBtn.addEventListener("click", function(){
