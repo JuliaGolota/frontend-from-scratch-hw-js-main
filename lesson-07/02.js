@@ -4,11 +4,16 @@
  */
 
 function isNumeric(str) {
-  // your code
+  // .trim() убирает пробелы вначале и вконце
+  if (str.trim() === "") {  // строка пустая или из пробелов
+    return false
+  }
+  // Number(str) преобразует строку в число
+  return !isNaN(Number(str));   // true, если строка — число
 }
 
-// console.log(isNumeric("123")) // Ожидаемый результат: true
-// console.log(isNumeric("12.3")) // Ожидаемый результат: true
-// console.log(isNumeric("123abc")) // Ожидаемый результат: false
-// console.log(isNumeric("abc")) // Ожидаемый результат: false
-// console.log(isNumeric(" ")) // Ожидаемый результат: false
+console.log(isNumeric("123")) // Ожидаемый результат: true
+console.log(isNumeric("12.3")) // Ожидаемый результат: true
+console.log(isNumeric("123abc")) // Ожидаемый результат: false
+console.log(isNumeric("abc")) // Ожидаемый результат: false
+console.log(isNumeric(" ")) // Ожидаемый результат: false
